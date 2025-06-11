@@ -1,5 +1,6 @@
 package io.github.bokalebsson;
 
+import java.util.Random;
 import java.util.Scanner;
 
 public class Exercises {
@@ -177,6 +178,89 @@ public class Exercises {
 
 /*        Create a program that asks user to input two numbers and print the
         sum/multiplication/division and subtraction of given numbers*/
+
+/*        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter a number: ");
+        int number1 = scanner.nextInt();
+        System.out.println("Enter another number: ");
+        int number2 = scanner.nextInt();
+
+        System.out.println(number1 + " + " + number2 + " = " + (number1 + number2));
+        System.out.println(number1 + " * " + number2 + " = " + (number1 * number2));
+        if (number2 != 0) {
+            double result = (double) number1 / number2;
+            System.out.println(number1 + " / " + number2 + " = " + result);
+        } else {
+            System.out.println("Division by 0 is not allowed.");
+        }
+        System.out.println(number1 + " - " + number2 + " = " + (number1 - number2));
+
+        scanner.close();*/
+
+
+/*      Create a program that converts seconds to hours, minutes and seconds
+        Input seconds: 86399
+        Expected output:
+        23:59:59*/
+
+/*        Scanner scanner = new Scanner(System.in);
+        System.out.println("Input seconds: ");
+        int totalSeconds = scanner.nextInt();
+
+        int hours = totalSeconds / 3600; // Whole hours.
+        int minutes = (totalSeconds % 3600) / 60; // Remaining minutes.
+        int seconds = totalSeconds % 60; // Remaining seconds.
+
+        System.out.printf("%02d:%02d:%02d\n", hours, minutes, seconds);*/
+        /* Formated string. % = start of format, 0 = fill out with zeros if needed.
+        * 2 = two digits. d = formated as an integer.
+        * */
+
+
+/*      Write a program that first generates a random number between 1 and 500
+        and stores it into a variable (see the Random class). Then let the user make a
+        guess for which number it is. If the user types the correct number, he should be
+        presented with a message (including the number of guesses he has made). If he
+        types a number that is greater or smaller than the given number, display either
+        “Your guess was too small” or “Your guess was too big”. The program should
+        keep executing until the user input the correct guess.*/
+
+/*        Random random = new Random();
+        int secretNumber = random.nextInt(500) +1;
+        int guess = 0;
+        int attempts = 0;
+
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Guess a number between 1 and 500: ");
+
+        // Run this loop until the users guess is correct.
+        while (guess != secretNumber){
+
+            System.out.println("Your guess: ");
+
+            if (scanner.hasNextInt()){
+                guess = scanner.nextInt();
+                attempts++;
+
+                    if (guess < secretNumber){
+                        System.out.println("Your guess was to small.");
+
+                    } else if (guess > secretNumber){
+                        System.out.println("Your guess was to large.");
+
+                    } else {
+                        System.out.println("Correct! The secret number was " + secretNumber +".");
+                        System.out.println("You guessed the correct number in " + attempts +".");
+                    }
+
+            } else {
+                System.out.println("Please write a whole number.");
+                scanner.next();
+            }
+
+        }
+    scanner.close();*/
 
     }
 }
