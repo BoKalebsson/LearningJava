@@ -46,7 +46,7 @@ public class Exercises {
             boolean canParkCorrectly;*/
 
 //            Method for printing out the information about the Car.
-/*            void printInfo() {
+/*            public void printInfo() {
                 System.out.println("Brand: " + brand);
                 System.out.println("Registration Number: " + regNumber);
                 System.out.println("Max speed: " + maxSpeed);
@@ -92,7 +92,7 @@ public class Exercises {
         String name = scanner.nextLine();
         System.out.println(name);*/
 
-
+        System.out.println("You are here!");
 
     }
 
