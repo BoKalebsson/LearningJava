@@ -2,6 +2,8 @@ package io.github.bokalebsson;
 
 import java.time.DayOfWeek;
 import java.time.LocalDate;
+import java.time.LocalTime;
+import java.time.Period;
 import java.time.format.DateTimeFormatter;
 
 public class DateTimeExercises {
@@ -65,6 +67,69 @@ public class DateTimeExercises {
         rest toLowerCase.*//*
         System.out.println("Day of Week = " + dayOfWeek.toString().substring(0,1).toUpperCase() +
                 dayOfWeek.toString().substring(1).toLowerCase());*/
+
+
+/*        Create a LocalDate of current date plus 10 years and minus 10 months. From that date extract the
+        month and print it out.*/
+
+/*        LocalDate currentDate = LocalDate.now();
+
+        LocalDate futureDate = currentDate.plusYears(10).minusMonths(10);
+
+        System.out.println(futureDate.getMonth());*/
+
+
+/*      Using the LocalDate from exercise 6 and your birthdate, create a Period between your birthdate and
+        the date from exercise 5. Print out the elapsed years, months and days.*/
+
+/*        LocalDate myBirthDay = LocalDate.parse("1983-09-06");
+
+        LocalDate currentDate = LocalDate.now();
+
+        LocalDate futureDate = currentDate.plusYears(10).minusMonths(10);
+
+        Period period = Period.between(myBirthDay, futureDate);
+
+        int years = period.getYears();
+        int months = period.getMonths();
+        int days = period.getDays();
+
+        System.out.println("Years between my birthday and the future-date: ");
+        System.out.println(years + " years, " + months + " months, " + days + " days.");*/
+
+
+/*        Create a period of 4 years, 7 months and 29 days. Then create a LocalDate of current date and add
+        the period you created to the current date.*/
+
+/*        Period period = Period.of(4,7,29);
+        LocalDate currentDate = LocalDate.now();
+        System.out.println("Future date: " + currentDate.plus(period));*/
+
+
+/*      Create a LocalTime object of the current time.*/
+
+/*        LocalTime currentTime = LocalTime.now();
+        System.out.println("Current time: " + currentTime);*/
+
+
+/*      Extract the nanoseconds of a LocalTime object of current time. Print out the nanoseconds.*/
+
+/*        LocalTime currentTime = LocalTime.now();
+        int nanoSeconds = currentTime.getNano();
+        System.out.println("Nano seconds: " + nanoSeconds);*/
+
+
+/*        Create a LocalTime object from a String using the .parse() method.*/
+
+/*        LocalTime time = LocalTime.parse("14:23:57");
+        System.out.println("Time = " + time);*/
+
+
+/*        Using DateTimeFormatter format LocalTime from current time and print it out as following pattern:
+        10:32:53*/
+
+/*        LocalTime currentTime = LocalTime.now();
+        System.out.println("Current time formated: " + currentTime.format(DateTimeFormatter.ofPattern("hh:mm:ss")));*/
 
 
     }
