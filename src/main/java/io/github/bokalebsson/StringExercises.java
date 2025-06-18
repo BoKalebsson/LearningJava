@@ -36,6 +36,41 @@ public class StringExercises {
         System.out.println("The substring: " + result);*/
 
 
+/*        Convert the following String: "CAPS EQUALS SCREAMING" to
+        lowercase and print it out. Then convert it back to
+        uppercase and print it out again.*/
+
+/*        String text = "CAPS EQUALS SCREAMING";
+        System.out.println("LowerCase: " + text.toLowerCase());
+        System.out.println("UpperCase: " + text.toUpperCase());*/
+
+
+/*        Correct the following String: "Java is the worst
+        programming language!" by replacing the (obviously
+        incorrect) word "worst" with the word "best". Then print
+        out the sentence.*/
+
+/*        String text = "Java is the worst programming language!";
+        System.out.println(text.replace("worst", "best"));*/
+
+
+/*        What is the output of the following String:
+        "\tJ\ta\tv\ta\t" after you trim it?*/
+
+/*        String text = "\tJ\ta\tv\ta\t";
+        System.out.println("Text: " + text);
+        System.out.println("Text after trim: " + text.trim());*/
+
+
+/*        Parse the following int: 20 to a String and add a 20 to the
+        end of the String. Printing it out should return: "2020".*/
+
+/*        int number = 20;
+        String text = Integer.toString(number);
+        System.out.println(text + "20");*/
+
+
+
 
 
 
