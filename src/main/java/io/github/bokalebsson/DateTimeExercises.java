@@ -2,6 +2,7 @@ package io.github.bokalebsson;
 
 import java.time.*;
 import java.time.format.DateTimeFormatter;
+import java.time.temporal.WeekFields;
 
 public class DateTimeExercises {
 
@@ -163,6 +164,22 @@ public class DateTimeExercises {
 
 
 /*        Create your own calendar for the year 2018.*/
+/*
+        // The start and end-date of the year.
+        LocalDate startDate = LocalDate.of(2018,1,1);
+        LocalDate endDate = LocalDate.of(2018,12,31);
+
+        LocalDate currentDate = startDate;
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd (EEEE)");
+
+        // The loop will continue as long as currentDate is not after the endDate.
+        while (!currentDate.isAfter(endDate)) {
+            if (currentDate.getDayOfMonth() == 1) {
+                System.out.println("\n==== " + currentDate.getMonth() + " ====");
+            }
+            System.out.println(currentDate.format(formatter));
+            currentDate = currentDate.plusDays(1);
+        }*/
 
 
     }
