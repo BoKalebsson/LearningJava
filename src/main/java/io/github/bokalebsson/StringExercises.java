@@ -1,5 +1,7 @@
 package io.github.bokalebsson;
 
+import java.util.Arrays;
+
 public class StringExercises {
 
     public static void main(String[] args) {
@@ -70,8 +72,65 @@ public class StringExercises {
         System.out.println(text + "20");*/
 
 
+/*        Oil and water don't go well together. Given the String:
+        "Oil and Water", split them up into the words "Oil","Water"
+        and store them in a String array.*/
+
+/*        String text = "Oil and Water";
+        String[] words = text.split(" and ");
+        System.out.println(Arrays.toString(words));*/
 
 
+/*        Split the following String: "Carl,Susie,Fredrick,Bob,Erik"
+        into an array. Print out all names separately.*/
+
+/*        String names = "Carl,Susie,Fredrick,Bob,Erik";
+        String[] namesArray = names.split(",");
+
+        System.out.println("For-each-loop: ");
+        for (String name : namesArray) {
+            System.out.println(name);
+        }
+        System.out.println("For-loop: ");
+        for (int i = 0; i < namesArray.length; i++) {
+            System.out.println(namesArray[i]);
+        }*/
+
+
+/*        Convert the following String: "ThisShouldBeConverted" to
+        a char array. Iterate through the char array and print out
+        each element.*/
+
+/*        String text = "ThisShouldBeConverted";
+        char[] letterArray = text.toCharArray();
+
+        System.out.println("For-each-loop: ");
+        for (char letter : letterArray) {
+            System.out.print(letter + " ");
+        }
+
+        System.out.println();
+
+        System.out.println("For-loop: ");
+        for (int i = 0; i < letterArray.length; i++) {
+            System.out.print(letterArray[i] + " ");
+        }*/
+
+
+/*        Convert the following char[]: {'J','a','v','a'} to a
+        String and print it out.*/
+
+/*        char[] letters = {'J','a','v','a'};
+        System.out.println("CharArray: " + Arrays.toString(letters));
+        String convertedString = new String(letters);
+        System.out.println("Converted String: " + convertedString);
+
+        StringBuilder builder = new StringBuilder();
+        for (char c : letters) {
+            builder.append(c);
+        }
+        String result = builder.toString();
+        System.out.println("String Builder: " + result);*/
 
 
     }
