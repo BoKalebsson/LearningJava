@@ -1,9 +1,6 @@
 package io.github.bokalebsson;
 
-import java.time.DayOfWeek;
-import java.time.LocalDate;
-import java.time.LocalTime;
-import java.time.Period;
+import java.time.*;
 import java.time.format.DateTimeFormatter;
 
 public class DateTimeExercises {
@@ -130,6 +127,42 @@ public class DateTimeExercises {
 
 /*        LocalTime currentTime = LocalTime.now();
         System.out.println("Current time formated: " + currentTime.format(DateTimeFormatter.ofPattern("hh:mm:ss")));*/
+
+
+/*        Create a LocalDateTime with the date and time components as: date: 2018-04-05, time: 10.00*/
+
+/*        LocalDateTime chosenDateTime = LocalDateTime.of(2018, 4, 5, 10, 0);
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("'date:' yyyy-MM-dd 'time:' HH.mm");
+        System.out.println(chosenDateTime.format(formatter));*/
+
+
+/*        Using DateTimeFormatter format the LocalDateTime object from exercise 13 to a String that should
+        look like this: torsdag 5 april 10:00.*/
+
+/*        LocalDateTime chosenDateTime = LocalDateTime.of(2018, 4, 5, 10, 0);
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("eeee d MMMM HH:mm");
+        System.out.println(chosenDateTime.format(formatter));*/
+
+/*        Create a LocalDateTime object by combining LocalDate object and LocalTime object.*/
+
+/*        LocalDate currentDate = LocalDate.now();
+        LocalTime currentTime = LocalTime.now();
+        LocalDateTime currentDateTime = LocalDateTime.of(currentDate,currentTime);
+        System.out.println("Combined Date and Time: " + currentDateTime);*/
+
+
+/*        Create a LocalDateTime object. Then get the LocalDate and LocalTime components into separate
+        objects of respective types from the LocalDateTime object.*/
+
+/*        LocalDateTime currentDateTime = LocalDateTime.now();
+        System.out.println("Current DateTime = " + currentDateTime);
+        LocalDate currentDate = currentDateTime.toLocalDate();
+        System.out.println("Current Date from LocalDateTime: " + currentDate);
+        LocalTime currentTime = currentDateTime.toLocalTime();
+        System.out.println("Current Time from LocalDateTime: " + currentTime);*/
+
+
+/*        Create your own calendar for the year 2018.*/
 
 
     }
