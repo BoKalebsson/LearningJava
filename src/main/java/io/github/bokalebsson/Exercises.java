@@ -44,10 +44,10 @@ public class Exercises {
             int maxSpeed;
             String owner;
             String color;
-            boolean canParkCorrectly;*/
+            boolean canParkCorrectly;
 
 
-/*          public void printInfo() {
+          public void printInfo() {
                 System.out.println("Brand: " + brand);
                 System.out.println("Registration Number: " + regNumber);
                 System.out.println("Max speed: " + maxSpeed);
@@ -55,10 +55,10 @@ public class Exercises {
                 System.out.println("Color: " + color);
                 System.out.println("Can park correctly: " + canParkCorrectly);
             }
-        }*/
+        }
 
 
-/*          Car carNumber1 = new Car();
+          Car carNumber1 = new Car();
             carNumber1.brand = "BMW";
             carNumber1.regNumber = "ABC 123";
             carNumber1.maxSpeed = 175;
