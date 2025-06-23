@@ -1,7 +1,5 @@
 package io.github.bokalebsson;
 
-import java.util.Arrays;
-
 public class ArrayExercises {
 
     public static void main(String[] args) {
@@ -16,10 +14,29 @@ public class ArrayExercises {
         }*/
 
 
+/*        Create a program and create a method with name ‘indexOf’ which will
+        find and return the index of an element in the array. If the element
+        doesn’t exist your method should return -1 as value.
+        Expected output: Index position of number 5 is: 2.*/
 
+/*        int[] numbers = {2, 7, 4, 5, 1, 9, 6};
+        int number = 3;
+        int index = indexOf(numbers, number);
+        System.out.println("Index position of number " + number + " is: " + index);
+
+    }
+
+    public static int indexOf(int[] array, int value) {
+
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] == value) {
+                return i;
+            }
+        }
+        return -1;
+    }*/
 
 
 
     }
-
 }
