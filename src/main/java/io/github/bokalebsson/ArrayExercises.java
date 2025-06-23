@@ -98,7 +98,30 @@ public class ArrayExercises {
         System.out.printf("Average is: %.1f%n", average);*/
 
 
+/*        Write a program which will set up an array to hold 10 numbers and print
+        out only the uneven numbers.Expected output: Array: 1 2 4 7 9 12
+        Odd Array: 1 7 9*/
 
+/*        int[] numbers = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+
+        System.out.print("Array: ");
+        for (int number : numbers) {
+            System.out.print(number + " ");
+        }
+        System.out.println();
+
+        System.out.print("Odd array: ");
+        for (int number : numbers){
+            if (number % 2 != 0) {
+                System.out.print(number + " ");
+            }
+        }*/
+
+
+/*        Write a program which will remove the duplicate elements of a given
+        array [20, 20, 40, 20, 30, 40, 50, 60, 50].
+        Expected output: Array: 20 20 40 20 30 40 50 60 50
+        Array without duplicate values: 20 40 30 50 60*/
 
 
     }
