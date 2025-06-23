@@ -131,20 +131,24 @@ public class ArrayExercises {
         }
         System.out.println();
 
+        *//* We set the length of noDuplicants to numbers.length, since all
+        numbers might be unique. *//*
         int[] noDuplicates = new int[numbers.length];
         int uniqueCount = 0;
 
-
+        // Loop through all numbers.
         for (int number : numbers) {
             boolean found = false;
 
+            // Check if the number exists in noDuplicates.
             for (int i = 0; i < uniqueCount; i++) {
                 if (noDuplicates[i]  == number) {
                     found = true;
-                    break;
+                    break; // Already exists, stop looking.
                 }
             }
 
+            // If the number not exist, add it to noDuplicates.
             if (!found) {
                 noDuplicates[uniqueCount] = number;
                 uniqueCount++;
