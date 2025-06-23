@@ -59,6 +59,45 @@ public class ArrayExercises {
         System.out.println("Elements from second array: " +Arrays.toString(array2));*/
 
 
+/*        Create a two-dimensional string array [2][2]. Assign values to the
+        2-dimensional array containing any Country and City.
+        Expected output: France Paris
+        Sweden Stockholm*/
+
+/*        String[][] countryCity = new String [2][2];
+        countryCity[0][0] = "France";
+        countryCity[0][1] = "Paris";
+        countryCity[1][0] = "Sweden";
+        countryCity[1][1] = "Stockholm";
+
+        for(int i=0; i<countryCity.length; i++) {
+            for(int j=0; j<countryCity[i].length; j++) {
+                System.out.print(countryCity[i][j] + " ");
+
+                if(j == countryCity[i].length -1) {
+                    System.out.println();
+                }
+            }
+        }*/
+
+
+/*        Write a program which will set up an array to hold the next values in this
+        order: 43, 5, 23, 17, 2, 14 and print the average of these 6 numbers.
+                Expected output: Average is: 17.3*/
+
+/*        int[] numbers = {43, 5, 23, 17, 2, 14};
+        int arrayLength = numbers.length;
+        int sum = 0;
+
+        for (int number : numbers) {
+            sum += number;
+        }
+
+        double average = (double) sum / arrayLength;
+
+        System.out.printf("Average is: %.1f%n", average);*/
+
+
 
 
 
