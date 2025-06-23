@@ -123,6 +123,39 @@ public class ArrayExercises {
         Expected output: Array: 20 20 40 20 30 40 50 60 50
         Array without duplicate values: 20 40 30 50 60*/
 
+/*        int[] numbers = {20, 20, 40, 20, 30, 40, 50, 60, 50};
+
+        System.out.print("Array: ");
+        for (int number : numbers) {
+            System.out.print(number + " ");
+        }
+        System.out.println();
+
+        int[] noDuplicates = new int[numbers.length];
+        int uniqueCount = 0;
+
+
+        for (int number : numbers) {
+            boolean found = false;
+
+            for (int i = 0; i < uniqueCount; i++) {
+                if (noDuplicates[i]  == number) {
+                    found = true;
+                    break;
+                }
+            }
+
+            if (!found) {
+                noDuplicates[uniqueCount] = number;
+                uniqueCount++;
+            }
+        }
+
+        System.out.print("Array without duplicate values: ");
+        for (int i = 0; i < uniqueCount; i++) {
+            System.out.print(noDuplicates[i] + " ");
+        }
+        System.out.println();*/
 
     }
 }
