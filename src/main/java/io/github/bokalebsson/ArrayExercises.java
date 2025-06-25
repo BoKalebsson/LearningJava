@@ -1,6 +1,6 @@
 package io.github.bokalebsson;
 
-import java.util.Arrays;
+import java.util.*;
 
 public class ArrayExercises {
 
@@ -213,7 +213,54 @@ public class ArrayExercises {
         }*/
 
 
+/*        Write a program that ask the user for an integer and repeat that
+        question until user give you a specific value that user already has been
+        told about as a message in your program. Store these values in an array
+        and print that array. After that reverse the array elements so that the
+        first element becomes the last element, the second element becomes
+        the second to last element, etc. Do not just reverse the order in which
+        they are printed. You need to change the way they are stored in the
+        array.*/
 
+/*        // Solution with lists.
+        Scanner scanner = new Scanner(System.in);
+        List<Integer> numbers = new ArrayList<>();
+        final int TERMINATION_VALUE = 13;
+
+        System.out.println("Please enter a whole number (eg. 1, 5, 7). Enter " + TERMINATION_VALUE + " to exit.");
+
+        while (true) {
+            System.out.print("Value: ");
+
+            // Checks if the user input is a valid value.
+            if (scanner.hasNextInt()) {
+                int input = scanner.nextInt();
+
+                // Breaks loop by entering the TERMINATION_VALUE.
+                if (input == TERMINATION_VALUE) {
+                    break;
+                }
+
+                // Adds the user input to the list.
+                numbers.add(input);
+            }
+
+            // Catches all types of invalid user inputs.
+            else {
+                System.out.println("Invalid input. Please enter a valid whole number, or enter " + TERMINATION_VALUE + " to exit.");
+                scanner.next();
+            }
+
+        }
+
+        // Prints out the list.
+        System.out.println("Values entered: " + numbers);
+
+        // Reverses the list by swapping the index values around.
+        Collections.reverse(numbers);
+
+        // Prints the reversed list.
+        System.out.println("Reversed values: " + numbers);*/
 
     }
 }
