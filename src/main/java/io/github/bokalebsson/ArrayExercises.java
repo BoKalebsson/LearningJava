@@ -161,5 +161,59 @@ public class ArrayExercises {
         }
         System.out.println();*/
 
+
+/*        Write a method which will add elements in an array.
+        Remember that arrays are fixed in size so you need to come up with a
+        solution to “expand” the array.*/
+
+/*        int[] originalArray = {1, 2, 3, 4, 5};
+        int[] newArray = addToArray(originalArray, 6);
+        System.out.println("Original Array: " + Arrays.toString(originalArray));
+        System.out.println("Array with added value: " + Arrays.toString(newArray));
+
+    }
+
+    public static int[] addToArray(int[] originalArray, int valueToAdd) {
+
+        int[] newArray = Arrays.copyOf(originalArray, originalArray.length + 1);
+
+        newArray[newArray.length -1] = valueToAdd;
+
+        return newArray;
+    }*/
+
+
+/*        Write a program which will represent multiplication table stored in
+        multidimensional array.
+        Hint: You have two-dimensional array with values
+                [[1,2,3,4,5,6,7,8,9,10], [1,2,3,4,5,6,7,8,9,10]]*/
+
+/*        // Setting up the grid.
+        int[][] gridArray = {
+                {1, 2, 3, 4, 5, 6, 7, 8, 9, 10},
+                {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
+        };
+
+        // Setting up the new [][] array where we store the multiplied values.
+        int[][] result = new int[10][10];
+
+        // Loop that multiplies the grid numbers with each other.
+        for (int i = 0; i < 10; i++) {
+            for (int j = 0; j < 10; j++) {
+                result[i][j] = gridArray[0][i] * gridArray[1][j];
+            }
+        }
+
+        // Prints the result.
+        for (int i = 0; i < result.length; i++) {
+            for (int j = 0; j < result[i].length; j++) {
+                System.out.print(result[i][j] + "\t");
+            }
+            System.out.println();
+        }*/
+
+
+
+
     }
 }
