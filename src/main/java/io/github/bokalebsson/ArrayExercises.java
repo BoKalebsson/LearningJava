@@ -248,7 +248,7 @@ public class ArrayExercises {
             // Catches all types of invalid user inputs.
             else {
                 System.out.println("Invalid input. Please enter a valid whole number, or enter " + TERMINATION_VALUE + " to exit.");
-                scanner.next();
+                scanner.next(); // Clears invalid input.
             }
 
         }
@@ -261,6 +261,57 @@ public class ArrayExercises {
 
         // Prints the reversed list.
         System.out.println("Reversed values: " + numbers);*/
+
+
+/*        // Solution with arrays.
+        Scanner scanner = new Scanner(System.in);
+        final int TERMINATION_VALUE = 13;
+
+        System.out.println("Please enter a whole number (eg. 1, 5, 7). Enter " + TERMINATION_VALUE + " to exit.");
+
+        // Empty int array.
+        int[] numbers = new int[0];
+
+        // Loop until user inputs TERMINATION_VALUE.
+        while (true) {
+            System.out.print("Value: ");
+
+            // Checks if user have provided a valid value.
+            if (scanner.hasNextInt()) {
+                int input = scanner.nextInt();
+
+                // Checks if the user have entered the termination value.
+                if (input == TERMINATION_VALUE) {
+                    break;
+                }
+
+                // Creates a new int array, which is a copy of numbers, with length +1.
+                int[] newNumbers = Arrays.copyOf(numbers, numbers.length + 1);
+                // Adds new input last in the new array.
+                newNumbers[newNumbers.length - 1] = input;
+                // Updates numbers to be equal to the array with the added input.
+                numbers = newNumbers;
+
+            } else {
+                System.out.println("Invalid input. Please enter a valid whole number, or enter " + TERMINATION_VALUE + " to exit.");
+                scanner.next(); // Clears invalid input.
+
+            }
+        }
+        // Prints the array with the inputted values.
+        System.out.println("Values entered: " + Arrays.toString(numbers));
+
+        // Turns the array around with a temp value.
+        for (int i = 0; i < numbers.length / 2; i++) {
+            int temp = numbers[i];
+            numbers[i] = numbers[numbers.length - 1 - i];
+            numbers[numbers.length - 1 - i] = temp;
+        }
+
+        // Prints the reversed array.
+        System.out.println("Reversed values: " + Arrays.toString(numbers));*/
+
+
 
     }
 }
