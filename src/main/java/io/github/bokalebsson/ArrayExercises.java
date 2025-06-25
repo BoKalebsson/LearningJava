@@ -353,6 +353,79 @@ public class ArrayExercises {
         */
 
 
+/*        Create two arrays with arbitrary size and fill one with random numbers.
+        Then copy over the numbers from the array with random numbers so
+        that the even numbers are located in the rear (the right side) part of the
+        array and the odd numbers are located in the front part (the left side).*/
+
+/*        // The size of the arrays.
+        int size = 10;
+
+        int[] original = new int[size];
+        int[] sorted = new int[size];
+
+        // Calls the random class.
+        Random random = new Random();
+
+        // Fills the original array with random integers between 0 and 99.
+        for (int i = 0; i < size; i++) {
+            original[i] = random.nextInt(100);
+        }
+
+        // Prints the original array to display the values.
+        System.out.print("Original array: ");
+        for (int num : original) {
+            System.out.print(num + " ");
+        }
+        System.out.println();
+
+        // Two pointers, used for adding the values to the correct part.
+        int left = 0;
+        int right = sorted.length -1;
+
+        // Two lists with the odd and even numbers.
+        ArrayList<Integer> oddNumbers = new ArrayList<>();
+        ArrayList<Integer> evenNumbers = new ArrayList<>();
+
+        for (int i = 0; i < original.length; i++) {
+            int num = original[i];
+
+            // Uneven number
+            if (num % 2 != 0) {
+                sorted[left] = num;
+                left++;
+                oddNumbers.add(num);
+            }
+
+            // Even number
+            else {
+                sorted[right] = num;
+                right--;
+                evenNumbers.add(num);
+            }
+        }
+
+        // Prints out the sorted array.
+        System.out.print("Sorted array (odd first, even last): ");
+        for (int num : sorted) {
+            System.out.print(num + " ");
+        }
+        System.out.println();
+
+        // Prints the odd numbers
+        System.out.print("Odd values: ");
+        for (int num : oddNumbers) {
+            System.out.print(num + " ");
+        }
+        System.out.println();
+
+        // Prints the even numbers
+        System.out.print("Even values: ");
+        for (int num : evenNumbers) {
+            System.out.print(num + " ");
+        }
+        System.out.println();*/
+
 
     }
 }
