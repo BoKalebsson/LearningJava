@@ -312,6 +312,47 @@ public class ArrayExercises {
         System.out.println("Reversed values: " + Arrays.toString(numbers));*/
 
 
+/*        Write a program which will print the diagonal elements of two-
+                dimensional array.
+                Expected output: 1 4 9*/
+
+/*        int[][] numbers = {
+                {1, 2, 3},
+                {2, 4, 6},
+                {3, 6, 9}
+        };
+
+        System.out.println("This is our matrix:");
+        for (int i = 0; i < numbers.length; i++) {
+            for (int j = 0; j < numbers[i].length; j++) {
+                System.out.print(numbers[i][j] + " ");
+            }
+            System.out.println();
+        }
+
+        // For the diagonal [i][i]
+        System.out.println("This is diagonal numbers:");
+        for (int i = 0; i < numbers.length; i++) {
+            System.out.print(numbers[i][i] + " ");
+        }
+
+        System.out.println();
+
+        // For the diagonal [i][numbers.length - 1 - i]
+        System.out.println("This is also diagonal numbers:");
+        for (int i = 0; i < numbers.length; i++) {
+            System.out.print(numbers[i][numbers.length - 1 - i] + " ");
+
+        }
+
+        *//* This program only works for squares, and will only print
+        *  the main diagonal, and the anti diagonal. There is two more
+        *  diagonals, which is the reversed main diagonal, and the reversed
+        *  anti diagonal. We could implement storing the values in a list,
+        *  and then reverse it to get the two last diagonals.
+        */
+
+
 
     }
 }
