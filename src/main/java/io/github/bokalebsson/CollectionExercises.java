@@ -34,6 +34,33 @@ public class CollectionExercises {
             System.out.println(day);
         }*/
 
+/*        Create a new list and populate it with the days of the week excluding THURSDAY. Lastly,
+                insert the weekday THURSDAY into the right position in the list.*//*
+
+        ArrayList<DayOfWeek> week = new ArrayList<>();
+
+        // Iterate and add all days, except thursday, with for-each loop:
+        for (DayOfWeek day : DayOfWeek.values()){
+            if (day == DayOfWeek.THURSDAY) {
+                continue;
+            }
+            week.add(day);
+        }
+
+        // List after the loop:
+        System.out.println("The list, excluding thursday: \n" + week);
+
+        // Find the index for friday:
+        int index = week.indexOf(DayOfWeek.FRIDAY);
+
+        // Add thursday to the correct spot in the list;
+        week.add(index, DayOfWeek.THURSDAY);
+
+        // The list after adding thursday on the correct spot:
+        System.out.println("The list, including thursday: \n" + week);*/
+
+
+
 
 
 
