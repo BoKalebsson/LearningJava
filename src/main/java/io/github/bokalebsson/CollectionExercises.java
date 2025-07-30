@@ -96,11 +96,28 @@ public class CollectionExercises {
         // Print out the list:
         System.out.println("The converted list: \n" + converted);*/
 
+/*        Create a new hashSet and populate it with random names. Then convert the hashSet to an
+        arrayList. Lastly, manually sort the list in alphabetical order and print it out.*//*
 
+        // Create and fill a set with some random names:
+        Set<String> names = new HashSet<>();
+        names.add("Jonas");
+        names.add("Fredrik");
+        names.add("Jessica");
+        names.add("Elin");
+        names.add("Malin");
 
+        // Print the set:
+        System.out.println("The set: \n" + names);
 
+        // Convert set to list:
+        List<String> converted = new ArrayList<>(names);
 
+        // Sort the list:
+        Collections.sort(converted);
 
+        // Print the list:
+        System.out.println("The sorted list: \n" + converted);*/
 
     }
 }
