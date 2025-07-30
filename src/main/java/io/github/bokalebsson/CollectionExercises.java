@@ -3,6 +3,7 @@ package io.github.bokalebsson;
 import java.time.DayOfWeek;
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.List;
 
 public class CollectionExercises {
 
@@ -58,6 +59,21 @@ public class CollectionExercises {
 
         // The list after adding thursday on the correct spot:
         System.out.println("The list, including thursday: \n" + week);*/
+
+/*        Create a new list and populate it with the days of the week. Then create a new list out of the
+        first three elements of the first list using a subList.*//*
+
+        // Create and fill a list with days of the week:
+        ArrayList<DayOfWeek> week = new ArrayList<>();
+        Collections.addAll(week, DayOfWeek.values());
+
+        // Create a sublist with the three first elements from week and save it to a new list:
+        List<DayOfWeek> firstThree = new ArrayList<>(week.subList(0,3));
+
+        // Print the list:
+        System.out.println("The three first elements: \n" + firstThree);*/
+
+
 
 
 
