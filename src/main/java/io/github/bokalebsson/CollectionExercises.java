@@ -119,5 +119,23 @@ public class CollectionExercises {
         // Print the list:
         System.out.println("The sorted list: \n" + converted);*/
 
+/*        Create a new hashSet and populate it with random names. Lasty, sort the names in
+        alphabetical order using only a Set or a child of Set.*//*
+
+        // Create a hashSet and fill it with some random names:
+        // You could have skipped the conversion by just declaring a TreeSet here.
+        Set<String> hashSetNames = new HashSet<>();
+        hashSetNames.add("Jonas");
+        hashSetNames.add("Fredrik");
+        hashSetNames.add("Jessica");
+        hashSetNames.add("Elin");
+        hashSetNames.add("Malin");
+
+        // Convert to TreeSet from HashSet:
+        TreeSet<String> sortedNames = new TreeSet<>(hashSetNames);
+
+        // Print out the sorted TreeSet:
+        System.out.println(sortedNames);*/
+
     }
 }
