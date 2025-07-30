@@ -1,10 +1,7 @@
 package io.github.bokalebsson;
 
 import java.time.DayOfWeek;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.HashSet;
-import java.util.List;
+import java.util.*;
 
 public class CollectionExercises {
 
@@ -84,6 +81,20 @@ public class CollectionExercises {
         // Print out the set:
         System.out.println("The filled set: " + week);*/
 
+/*        Create a new hashSet and populate it with the days of the week. Then convert the hashSet to
+        an arrayList.*//*
+
+        // Create and fill a set with days of the week:
+        Set<DayOfWeek> week = new HashSet<>();
+        Collections.addAll(week, DayOfWeek.values());
+
+        // Print out the set:
+        System.out.println("The set: \n" + week);
+
+        List<DayOfWeek> converted = new ArrayList<>(week);
+
+        // Print out the list:
+        System.out.println("The converted list: \n" + converted);*/
 
 
 
