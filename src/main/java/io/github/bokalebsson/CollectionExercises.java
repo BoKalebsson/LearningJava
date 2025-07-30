@@ -3,6 +3,7 @@ package io.github.bokalebsson;
 import java.time.DayOfWeek;
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.HashSet;
 import java.util.List;
 
 public class CollectionExercises {
@@ -72,6 +73,16 @@ public class CollectionExercises {
 
         // Print the list:
         System.out.println("The three first elements: \n" + firstThree);*/
+
+/*        Create a new hashset and populate it with the days of the week. Lastly, print the set out and
+        pay attention to the order of the elements.*//*
+
+        // Create and fill a set with days of the week:
+        HashSet<DayOfWeek> week = new HashSet<>();
+        Collections.addAll(week, DayOfWeek.values());
+
+        // Print out the set:
+        System.out.println("The filled set: " + week);*/
 
 
 
